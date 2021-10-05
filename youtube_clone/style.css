@@ -35,6 +35,7 @@ button:focus {
   border: none;
   cursor: pointer;
   outline: none;
+  background-color: white;
 }
 
 header {
@@ -69,7 +70,7 @@ header .navi__icons .fa-search {
   max-width: 1000px;
 }
 
-.title {
+body > .title {
   padding: var(--padding);
 }
 
@@ -102,4 +103,119 @@ header .navi__icons .fa-search {
 .title__text__views {
   font-size: var(--font-micro);
   color: var(--grey-dark-color);
+}
+
+.title__icons {
+  display: flex;
+  justify-content: space-around;
+  margin: var(--padding), 0;
+}
+
+.title__icons button {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.title__iocns button i.active {
+  color: var(--blue-color);
+}
+
+.title__channel {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+}
+
+.metadata {
+  display: flex;
+  align-items: center;
+}
+
+.metadata img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+}
+
+.metadata .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.metadata .info {
+  font-size: var(--font-medium);
+}
+
+.metadata .info .subscribes {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.title__channel .subscribe {
+  text-transform: uppercase;
+  color: var(--red-color);
+  font-size: var(--font-medium);
+}
+
+.others {
+  padding: var(--padding);
+}
+
+.others > .title {
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+  margin-bottom: calc(var(--padding) / 2);
+}
+
+.others .item {
+  display: flex;
+  margin-top: var(--padding);
+}
+
+.others .item .img {
+  flex: 1 1 35%;
+  margin-right: var(--padding);
+}
+
+.others .item .img img {
+  width: 100%;
+}
+
+.others .item .info {
+  flex: 1 1 60%;
+}
+
+.others .item .moreBtn {
+  height: 100%;
+  flex: 1 1 5%;
+}
+
+.others .item .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.others .item .info .title {
+  font-size: var(--font-small);
+}
+
+.others .item .info .name,
+.others .item .info .views {
+  font-size: var(--font-micro);
+  color: var(--grey-dark-color);
+}
+
+.titleAndothers {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .titleAndothers {
+    flex-direction: row;
+    margin: var(--padding) 0;
+  }
 }
