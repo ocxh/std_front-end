@@ -89,14 +89,16 @@ body > .title {
 }
 .title__text__main {
   font-size: var(--font-medium);
+  margin-right: var(--padding);
+}
+.title__text__main.clamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  margin-right: var(--padding);
 }
 
-.title__text__titleandButton button {
+.title__text__titleandButton .moreBtn {
   height: 100%;
 }
 
